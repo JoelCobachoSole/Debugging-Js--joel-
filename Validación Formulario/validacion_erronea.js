@@ -14,7 +14,7 @@ function validarFormulario2() {
     if (nombre.length < 3) {
         mensaje.innerText = "El nombre debe tener al menos 3 caracteres.";
         mensaje.style.color = "red";
-        return true; 
+        return false; 
     }
 
     if (!email.includes('@') || !email.includes('.')) {
@@ -25,5 +25,5 @@ function validarFormulario2() {
 
     mensaje.innerText = "Formulario enviado correctamente.";
     mensaje.style.color = "green";
-    return false;
+    return true;
 }
